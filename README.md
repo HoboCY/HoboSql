@@ -1,2 +1,2 @@
-# Hobo.Sql
+# HoboSql
 ORM
