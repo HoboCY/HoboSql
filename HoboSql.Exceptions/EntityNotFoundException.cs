@@ -1,25 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace HoboSql.Exceptions
 {
     public class EntityNotFoundException : Exception
-
     {
-        public EntityNotFoundException(string message) : base(message) { }
+        public Type EntityType { get; set; }
 
-        public EntityNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+        public object Parameter { get; set; }
 
-        public EntityNotFoundException(Type entityType, object id, Exception innerException)
+        public EntityNotFoundException(string message, Exception innerException) : base(message, innerException)
+        {
+
+        }
+
+        public EntityNotFoundException(Type entityType, object parameter, Exception innerException)
             : base(
-                id == null
-                    ? $"There is no such an entity given given id. Entity type: {entityType.FullName}"
-                    : $"There is no such an entity. Entity type: {entityType.FullName}, id: {id}", innerException)
-        { }
+                parameter == null
+                    ? $"There is no such an entity given parameter. Entity type：{entityType.Name}"
+                    : $"There is no such an entity. Entity type：{entityType.Name}，parameter：{parameter}", innerException)
+        {
+            EntityType = entityType;
+            Parameter = parameter;
+        }
 
-        public EntityNotFoundException(Type entityType, object id) : this(entityType, id, null) { }
-
-        public EntityNotFoundException(Type entityType) : this(entityType, null, null) { }
+        public EntityNotFoundException(Type entityType, object parameter)
+            : this(entityType, parameter, null)
+        {
+        }
     }
 }

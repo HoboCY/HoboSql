@@ -7,11 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HoboSql", "HoboSql.csproj",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{B95038B2-FD2B-4253-BFBF-5FED2A98DC5B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HoboSql.Attributes", "..\HoboSql.Attributes\HoboSql.Attributes.csproj", "{1EFDF207-ACFA-4F9C-88F4-B32B1E9A6205}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "..\samples\ConsoleApp1\ConsoleApp1.csproj", "{55A16BFC-7B1F-4998-8A27-03B3345976BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoboSql.Exceptions", "..\HoboSql.Exceptions\HoboSql.Exceptions.csproj", "{2CC2DBA6-B0C3-442F-9C67-C9FAD05BC97E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HoboSql.Exceptions", "..\HoboSql.Exceptions\HoboSql.Exceptions.csproj", "{2CC2DBA6-B0C3-442F-9C67-C9FAD05BC97E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{10404451-21EC-45A4-8E4F-51D2D5A71263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10404451-21EC-45A4-8E4F-51D2D5A71263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10404451-21EC-45A4-8E4F-51D2D5A71263}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EFDF207-ACFA-4F9C-88F4-B32B1E9A6205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EFDF207-ACFA-4F9C-88F4-B32B1E9A6205}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EFDF207-ACFA-4F9C-88F4-B32B1E9A6205}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EFDF207-ACFA-4F9C-88F4-B32B1E9A6205}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55A16BFC-7B1F-4998-8A27-03B3345976BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55A16BFC-7B1F-4998-8A27-03B3345976BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55A16BFC-7B1F-4998-8A27-03B3345976BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
